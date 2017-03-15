@@ -1,0 +1,97 @@
+
+/* SVG
+------------------------------------------*/
+
+.animated-logo {
+  display: block;
+  margin: 0 auto;
+}
+
+svg {
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+}
+
+#Sphere {
+  /*display: block;
+  margin: 0 auto;*/
+  margin-top: 20%;
+  margin-left: 33%;
+}
+
+#stars {
+  animation: fade-in 1s ease-in;
+  animation-delay: 0s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+#text {
+  animation: fade-in 1s ease-in;
+  animation-delay: 2.8s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+#vector {
+  // animation-name: stretch-right;
+  animation-name: fade-in;
+  animation-duration: 1s; 
+  animation-timing-function: linear;   
+  transform-origin: 0% 0%; 
+  animation-fill-mode: forwards;
+  animation-delay: 1.8s;
+  opacity: 0;
+}
+
+#orbit-front {
+  animation-name: fade-in;
+  animation-duration: 0.3s; 
+  animation-timing-function: linear;   
+  transform-origin: 50% 100%; 
+  opacity: 0;   
+  animation-fill-mode: forwards; 
+  animation-delay: 4s;
+}
+
+#orbit-behind {
+  animation-name: fade-in; 
+  animation-duration: 0.3s; 
+  animation-timing-function: linear;  
+  transform-origin: 50% 0%;   
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 4.2s;
+}
+
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes stretch-right {
+  0% {
+    transform: scaleX(0.3);
+    opacity: 0;
+  }
+  40% {
+    transform: scaleX(1.02);
+  }
+  60% {
+    transform: scaleX(0.98);
+  }
+  80% {
+    transform: scaleX(1.01);
+  }
+  100% {
+    transform: scaleX(0.98);
+  }       
+  80% {
+    transform: scaleX(1.01);
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }             
+}

@@ -1,0 +1,372 @@
+/* Varibales
+------------------------------------------*/
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #a7a9ac;
+  font-size: 16px;
+  font-family: "Helvetica", "Arial", "Garamond", sans-serif;
+  margin: 0;
+  color: #000115;
+  line-height: 1.4em; }
+
+h1 {
+  font-family: "Helvetica", "Arial", "Garamond", sans-serif;
+  color: #1068b0; }
+
+a {
+  color: #1068b0;
+  text-decoration: none; }
+
+a:hover {
+  color: #ed3946; }
+
+p {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  max-height: 100vh;
+  padding: 2em 0; }
+
+img {
+  display: block;
+  margin: 0 auto; }
+
+abbr {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+/* Layout
+------------------------------------------*/
+header,
+.container,
+footer {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1080px;
+  max-height: 100vh; }
+
+.wrapper {
+  padding: 0;
+  background: #a7a9ac;
+  width: 100%; }
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3em;
+  margin-top: -5em;
+  color: #1068b0; }
+
+.text-demo {
+  font-size: 2em;
+  color: #000115;
+  line-height: 1.3em; }
+
+/* Nasa colors
+------------------------------------------*/
+.nasa-colors {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: "Helvetica", "Arial", "Garamond", sans-serif;
+  padding: 1.5em 0;
+  margin-bottom: 1em; }
+
+.nasa-blue {
+  background: #1068b0; }
+
+.nasa-red {
+  background: #ed3946; }
+
+.nasa-black {
+  background: #000115; }
+
+.nasa-silver {
+  background: #a7a9ac;
+  border: 1px solid #000115; }
+
+.nasa-grey {
+  background: #a0a0a4;
+  border: 1px solid #000115; }
+
+/* SVG
+------------------------------------------*/
+.animated-logo {
+  display: block;
+  margin: 0 auto; }
+
+svg {
+  display: block;
+  margin: 0 auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+#Sphere {
+  /*display: block;
+  margin: 0 auto;*/
+  margin-top: 20%;
+  margin-left: 33%; }
+
+#stars {
+  -webkit-animation: fade-in 1s ease-in;
+          animation: fade-in 1s ease-in;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+#text {
+  -webkit-animation: fade-in 1s ease-in;
+          animation: fade-in 1s ease-in;
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+#vector {
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-transform-origin: 0% 0%;
+      -ms-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+  opacity: 0; }
+
+#orbit-front {
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-transform-origin: 50% 100%;
+      -ms-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s; }
+
+#orbit-behind {
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-transform-origin: 50% 0%;
+      -ms-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s; }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes stretch-right {
+  0% {
+    -webkit-transform: scaleX(0.3);
+            transform: scaleX(0.3);
+    opacity: 0; }
+  40% {
+    -webkit-transform: scaleX(1.02);
+            transform: scaleX(1.02); }
+  60% {
+    -webkit-transform: scaleX(0.98);
+            transform: scaleX(0.98); }
+  80% {
+    -webkit-transform: scaleX(1.01);
+            transform: scaleX(1.01); }
+  100% {
+    -webkit-transform: scaleX(0.98);
+            transform: scaleX(0.98); }
+  80% {
+    -webkit-transform: scaleX(1.01);
+            transform: scaleX(1.01); }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1; } }
+@keyframes stretch-right {
+  0% {
+    -webkit-transform: scaleX(0.3);
+            transform: scaleX(0.3);
+    opacity: 0; }
+  40% {
+    -webkit-transform: scaleX(1.02);
+            transform: scaleX(1.02); }
+  60% {
+    -webkit-transform: scaleX(0.98);
+            transform: scaleX(0.98); }
+  80% {
+    -webkit-transform: scaleX(1.01);
+            transform: scaleX(1.01); }
+  100% {
+    -webkit-transform: scaleX(0.98);
+            transform: scaleX(0.98); }
+  80% {
+    -webkit-transform: scaleX(1.01);
+            transform: scaleX(1.01); }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1; } }
+/*! Flickity v1.2.1
+http://flickity.metafizzy.co
+---------------------------------------------- */
+.flickity-enabled {
+  position: relative; }
+
+.flickity-enabled:focus {
+  outline: none; }
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%; }
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+/* draggable */
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab; }
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing; }
+
+/* ---- previous/next buttons ---- */
+.flickity-prev-next-button {
+  position: absolute;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  background: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  /* vertically center */
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.flickity-prev-next-button:hover {
+  background: white; }
+
+.flickity-prev-next-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #09F; }
+
+.flickity-prev-next-button:active {
+  opacity: 0.6; }
+
+.flickity-prev-next-button.previous {
+  left: 10px; }
+
+.flickity-prev-next-button.next {
+  right: 10px; }
+
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px; }
+
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px; }
+
+.flickity-prev-next-button:disabled {
+  opacity: 0.3;
+  cursor: auto; }
+
+.flickity-prev-next-button svg {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%; }
+
+.flickity-prev-next-button .arrow {
+  fill: #333; }
+
+/* ---- page dots ---- */
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1; }
+
+.flickity-rtl .flickity-page-dots {
+  direction: rtl; }
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer; }
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 1; }
+
+/* Flickity responsive
+------------------------------------------*/
+img {
+  max-width: 100%;
+  height: auto; }
+
+.flickity div {
+  width: 100%; }
+
+.flickity {
+  /*padding-bottom: 2em;*/
+  /*height: 100%;*/
+  height: 100vh; }
+
+/*# sourceMappingURL=styles.css.map */

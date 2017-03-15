@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: $nasa-silver;
+  font-size: 16px;
+  font-family: $font;
+  margin: 0;
+  color: $nasa-black;
+  line-height: 1.4em;
+}
+ h1 {
+  font-family: $font;
+  color: $nasa-blue;
+ }
+
+a {
+  color: $nasa-blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $nasa-red;
+}
+
+p {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  max-height: 100vh;
+  padding: 2em 0;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+abbr {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* Layout
+------------------------------------------*/
+
+header,
+.container,
+footer {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1080px;
+  max-height: 100vh;
+}
+
+.wrapper {
+  padding: 0;
+  background: $nasa-silver;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3em;
+  margin-top: -5em;
+  color: $nasa-blue;
+}
+
+.text-demo {
+  font-size: 2em;
+  color: $nasa-black;
+  line-height: 1.3em;
+}
+
+/* Nasa colors
+------------------------------------------*/
+
+.nasa-colors {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: $font;
+  padding: 1.5em 0;
+  margin-bottom: 1em;
+}
+
+.nasa-blue {
+  background: $nasa-blue;
+}
+
+.nasa-red {
+  background: $nasa-red;
+}
+
+.nasa-black {
+  background: $nasa-black;
+}
+
+.nasa-silver {
+  background: $nasa-silver;
+  border: 1px solid $nasa-black;
+}
+
+.nasa-grey {
+  background: $nasa-grey;
+  border: 1px solid $nasa-black;
+}
